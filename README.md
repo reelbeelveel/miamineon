@@ -5,4 +5,5 @@ A Vim colorscheme built on Steve Losh's Badwolf (http://stevelosh.com/projects/b
 I honestly have no idea what I'm doing, but I'm trying my best to learn...
 
 # screenshots
+![Alt text](/../master/screenshots/splash-screenshot.png?raw=true)
 ![Alt text](/../master/screenshots/screenshot0.png?raw=true)
