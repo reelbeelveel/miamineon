@@ -1,15 +1,15 @@
-let s:N1 = [ '#141413' , '#00ff00' , 232 , 10  ] " blackestgravel & lime
-let s:N2 = [ '#87ff00' , '#45413b' , 118 , 238 ] " slime          & deepgravel
-let s:N3 = [ '#87ffaf' , '#242321' , 121 , 235 ] " seastain       & blackgravel
-let s:N4 = [ '#666462' , 241 ]                   " mediumgravel
+let s:N1 = [ '#141413' , '#00ff00' , 232 , 10  ] " blackestgray & lime
+let s:N2 = [ '#87ff00' , '#45413b' , 118 , 238 ] " slime          & deepgray
+let s:N3 = [ '#87ffaf' , '#242321' , 121 , 235 ] " seastain       & blackgray
+let s:N4 = [ '#666462' , 241 ]                   " mediumgray
 
-let s:I1 = [ '#141413' , '#87ff00' , 232 , 118 ] " blackestgravel & slime
+let s:I1 = [ '#141413' , '#87ff00' , 232 , 118 ] " blackestgray & slime
 let s:I2 = [ '#d7d7ff' , '#d7005f' , 189 , 162 ] " concrete       & hotpink
-let s:I3 = [ '#d75f00' , '#242321' , 166 , 235 ] " sunburn        & darkgravel
+let s:I3 = [ '#d75f00' , '#242321' , 166 , 235 ] " sunburn        & darkgray
 
-let s:V1 = [ '#141413' , '#87ffaf' , 232 , 121 ] " blackestgravel & seastain
+let s:V1 = [ '#141413' , '#87ffaf' , 232 , 121 ] " blackestgray & seastain
 let s:V2 = [ '#080808' , '#d7d7ff' , 232 , 189 ] " ink            & concrete
-let s:V3 = [ '#d7ff00' , '#242321' , 190 , 235 ] " viceyellow     & blackgravel
+let s:V3 = [ '#d7ff00' , '#242321' , 190 , 235 ] " viceyellow     & blackgray
 let s:V4 = [ '#666462' , 241 ]                   " concrete       & purple
 
 let s:RE = [ '#d7ff00' , 190 ]                   " viceyellow
