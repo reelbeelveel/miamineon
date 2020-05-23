@@ -404,20 +404,20 @@ call s:HL('djangoVarBlock', 'sunburn', '')
 " HTML {{{
 
 " Punctuation
-call s:HL('htmlTag',    'purplest', 'bg', 'none')
+call s:HL('htmlTag',    'purple', 'bg', 'none')
 call s:HL('htmlEndTag', 'purplest', 'bg', 'none')
 
 " Tag names
-call s:HL('htmlTagName',       'purpler', '', 'bold')
-call s:HL('htmlSpecialTagName','purpler', '', 'bold')
-call s:HL('htmlSpecialChar',      'lime', '', 'none')
+call s:HL('htmlTagName',       'purple', '', 'bold')
+call s:HL('htmlSpecialTagName','sunburn', '', 'bold')
+call s:HL('htmlSpecialChar',      'slime', '', 'none')
 
 " Attributes
-call s:HL('htmlArg', 'purpler', '', 'none')
+call s:HL('htmlArg', 'viceyellow', '', 'none')
 
 " Stuff inside an <a> tag
 
-    call s:HL('htmlLink', 'lightgray', '', 'underline')
+    call s:HL('htmlLink', 'concrete', '', 'underline')
 " }}}
 " Java {{{
 
