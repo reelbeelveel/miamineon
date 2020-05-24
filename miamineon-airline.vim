@@ -9,13 +9,16 @@ let s:I3 = [ '#d75f00' , '#242321' , 166 , 235 ] " sunburn        & darkgray
 
 let s:V1 = [ '#141413' , '#87ffaf' , 232 , 121 ] " blackestgray & seastain
 let s:V2 = [ '#080808' , '#d7d7ff' , 232 , 189 ] " ink            & concrete
-let s:V3 = [ '#d7ff00' , '#242321' , 190 , 235 ] " viceyellow     & blackgray
+let s:V3 = [ '#d7ff00' , '#45413b' , 190 , 238 ] " viceyellow     & blackgray
 let s:V4 = [ '#666462' , 241 ]                   " concrete       & purple
+
+let s:IN1= [ '#d7ff00' , '#141413' , 190 , 232 ]
+let s:IN2= [ '#141413' , '#d7ff00' , 232 , 118 ]
+let s:IN3= [ '#d7005f' , '#666462' , 162 , 241 ]
 
 let s:RE = [ '#d7ff00' , 190 ]                   " viceyellow
 let s:PA = [ '#d7d7ff' , 189 ]                   " concrete
 
-let s:IA = [ s:N2[1] , s:N3[1] , s:N2[3] , s:N3[3] , '' ]
 
 let g:airline#themes#miamineon#palette = {}
 
@@ -46,8 +49,7 @@ let g:airline#themes#miamineon#palette.visual_modified = {
       \ 'airline_c': [ s:V3[0]   , s:V4[0]   , s:V3[2]   , s:V4[1]   , ''     ] }
 
 
-let g:airline#themes#miamineon#palette.inactive = airline#themes#generate_color_map(s:IA, s:IA, s:IA)
+let g:airline#themes#miamineon#palette.inactive = airline#themes#generate_color_map(s:IN1, s:IN2, s:IN3)
 let g:airline#themes#miamineon#palette.inactive_modified = {
       \ 'airline_c': [ s:V1[1]   , ''        , s:V1[3]   , ''        , ''     ] }
 
-hi airline_tab_right ctermfg=190 ctermbg=238
