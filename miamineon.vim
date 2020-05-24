@@ -53,7 +53,7 @@ let s:mnc.concrete   = ['d7d7ff', 189]
 " Gradient fullfilled.
 let s:mnc.purple     = ['af00ff', 127]
 let s:mnc.purpler    = ['af00d7', 129]
-let s:mnc.purplest   = ['af57ff', 127]
+let s:mnc.purplest   = ['af5fff', 135]
 
 " }}}
 " Highlighting Function {{{
