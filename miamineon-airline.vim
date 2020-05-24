@@ -50,3 +50,4 @@ let g:airline#themes#miamineon#palette.inactive = airline#themes#generate_color_
 let g:airline#themes#miamineon#palette.inactive_modified = {
       \ 'airline_c': [ s:V1[1]   , ''        , s:V1[3]   , ''        , ''     ] }
 
+hi airline_tab_right ctermfg=190 ctermbg=238
