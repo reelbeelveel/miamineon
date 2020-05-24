@@ -12,9 +12,9 @@ let s:V2 = [ '#080808' , '#d7d7ff' , 232 , 189 ] " ink            & concrete
 let s:V3 = [ '#d7ff00' , '#45413b' , 190 , 238 ] " viceyellow     & blackgray
 let s:V4 = [ '#666462' , 241 ]                   " concrete       & purple
 
-let s:IN1= [ '#d7ff00' , '#141413' , 190 , 232 ]
-let s:IN2= [ '#141413' , '#d7ff00' , 232 , 118 ]
-let s:IN3= [ '#d7005f' , '#666462' , 162 , 241 ]
+let s:IN1= [ '#d7005f' , '#141413' , 162 , 232 ]
+let s:IN2= [ '#141413' , '#87ff00' , 232 , 118 ]
+let s:IN3= [ '#d7ff00' , '#666462' , 190 , 241 ]
 
 let s:RE = [ '#d7ff00' , 190 ]                   " viceyellow
 let s:PA = [ '#d7d7ff' , 189 ]                   " concrete
