@@ -7,13 +7,13 @@ let s:I1 = [ '#141413' , '#87ff00' , 232 , 118 ] " blackestgray & slime
 let s:I2 = [ '#d7d7ff' , '#d7005f' , 189 , 162 ] " concrete       & hotpink
 let s:I3 = [ '#d75f00' , '#242321' , 166 , 235 ] " sunburn        & darkgray
 
-let s:V1 = [ '#141413' , '#87ffaf' , 232 , 121 ] " blackestgray & seastain
+let s:V1 = [ '#d7d7ff' , '#5f875f' , 193 , 65  ] " blackestgray & seastain
 let s:V2 = [ '#080808' , '#d7d7ff' , 232 , 189 ] " ink            & concrete
 let s:V3 = [ '#d7ff00' , '#45413b' , 190 , 238 ] " viceyellow     & blackgray
 let s:V4 = [ '#666462' , 241 ]                   " concrete       & purple
 
-let s:IN1= [ '#d7005f' , '#141413' , 162 , 232 ]
-let s:IN2= [ '#141413' , '#87ff00' , 232 , 118 ]
+let s:IN1= [ '#5f875f' , '#141413' , 65  , 232 ]
+let s:IN2= [ '#d7005f' , '#141413' , 162 , 232 ]
 let s:IN3= [ '#d7ff00' , '#666462' , 190 , 241 ]
 
 let s:RE = [ '#d7ff00' , 190 ]                   " viceyellow
@@ -42,7 +42,6 @@ let g:airline#themes#miamineon#palette.insert_paste = {
 let g:airline#themes#miamineon#palette.replace = copy(airline#themes#miamineon#palette.insert)
 let g:airline#themes#miamineon#palette.replace.airline_a = [ s:I1[0] , s:RE[0] , s:I1[2] , s:RE[1] , '' ]
 let g:airline#themes#miamineon#palette.replace_modified = g:airline#themes#miamineon#palette.insert_modified
-
 
 let g:airline#themes#miamineon#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)
 let g:airline#themes#miamineon#palette.visual_modified = {
