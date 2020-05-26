@@ -44,6 +44,8 @@ let s:mnc.hotpink    = ['d7005f', 162]
 let s:mnc.viceyellow = ['d7ff00', 190]
 " Like an unfiltered swimming pool.
 let s:mnc.seastain   = ['87ffa7', 121]
+" the place crawls with the beasts
+let s:mnc.crocodile  = ['5f875f', 65]
 " is similar to lime but slimier.
 let s:mnc.slime      = ['87ff00', 118]
 " Heavily burnt, rotting orange.
@@ -106,8 +108,8 @@ let s:tabline='blackgray'
 " General/UI {{{
 
 call s:HL('Normal', 'lime', 'blackgray')
-
-call s:HL('Folded', 'mediumgray', 'bg', '')
+call s:HL('NonText', 'crocodile', 'bg')
+call s:HL('Folded', 'crocodile', 'bg', '')
 
 call s:HL('VertSplit', 'darkgray', 'deepgray', '')
 
@@ -121,8 +123,7 @@ call s:HL('TabLineSel', 'ink', 'slime', 'none')
 
 call s:HL('MatchParen', 'concrete', 'darkgray', 'bold')
 
-call s:HL('NonText',    'deepgray', 'bg')
-call s:HL('SpecialKey', 'deepgray', 'bg')
+call s:HL('SpecialKey', 'crocodile', 'bg', 'bold')
 
 call s:HL('Visual',    '',  'deepgray')
 call s:HL('VisualNOS', '',  'deepgray')
@@ -154,15 +155,15 @@ call s:HL('Tag', '', '', 'bold')
 " }}}
 " Gutter {{{
 
-call s:HL('LineNr',       'mediumgray', s:gutter)
-call s:HL('CursorLineNr', 'viceyellow', 'blackestgray')
+call s:HL('LineNr',       'gray', s:gutter)
+call s:HL('CursorLineNr', 'viceyellow', 'blackgray')
 call s:HL('SignColumn',   '',             s:gutter)
-call s:HL('FoldColumn',   'mediumgray', s:gutter)
+call s:HL('FoldColumn',   'crocodile', s:gutter)
 
 " }}}
 " Cursor {{{
 
-call s:HL('Cursor',  'slime', 'slime', 'bold')
+call s:HL('Cursor',  'crocodile', 'slime', 'bold')
 call s:HL('vCursor', 'slime', 'slime', 'bold')
 call s:HL('iCursor', 'slime', 'slime', 'none')
 
@@ -173,7 +174,7 @@ call s:HL('iCursor', 'slime', 'slime', 'none')
 call s:HL('Special', 'seastain')
 
 " Comments are slightly brighter than folds, to make 'headers' easier to see.
-call s:HL('Comment',        'gray')
+call s:HL('Comment',        'crocodile', 'bg', 'none')
 call s:HL('Todo',           'concrete', 'bg', 'bold')
 call s:HL('SpecialComment', 'concrete', 'bg', 'bold')
 
@@ -213,7 +214,7 @@ call s:HL('Exception','seastain', '', 'bold')
 " Misc
 call s:HL('Error','hotpink', 'slime', 'bold')
 call s:HL('Debug', 'viceyellow', 'ink', 'bold')
-call s:HL('Ignore', 'gray', '', '')
+call s:HL('Ignore', 'mediumgray', '', '')
 " }}}
 " Completion Menu {{{
 call s:HL('Pmenu', 'lime', 'deepergray')
@@ -289,15 +290,12 @@ call s:HL('EasyMotionShade',  'deepgray', 'bg')
 " }}}
 " Interesting Words {{{
 
-" These are only used if you're me or have copied the <leader>hNUM mappings
-" from my Vimrc.
 call s:HL('InterestingWord1', 'ink', 'sunburn')
 call s:HL('InterestingWord2', 'ink', 'lime')
 call s:HL('InterestingWord3', 'ink', 'seastain')
 call s:HL('InterestingWord4', 'ink', 'purple')
 call s:HL('InterestingWord5', 'ink', 'concrete')
 call s:HL('InterestingWord6', 'ink', 'viceyellow')
-
 
 " }}}
 " Makegreen {{{
@@ -397,8 +395,6 @@ call s:HL('diffSubname', 'sunburn', '', 'none')
 call s:HL('djangoArgument', 'hotpink', '',)
 call s:HL('djangoTagBlock', 'sunburn', '')
 call s:HL('djangoVarBlock', 'sunburn', '')
-" hi djangoStatement guifg=#ff3853 gui=bold
-" hi djangoVarBlock guifg=#f4cf86
 
 " }}}
 " HTML {{{
@@ -423,7 +419,7 @@ call s:HL('htmlArg', 'viceyellow', '', 'none')
 
 call s:HL('javaClassDecl', 'viceyellow', '', 'bold')
 call s:HL('javaScopeDecl', 'viceyellow', '', 'bold')
-call s:HL('javaCommentTitle',    'gray', '')
+call s:HL('javaCommentTitle',    'lightgray', '')
 call s:HL('javaDocTags', 'milk', '', 'none')
 call s:HL('javaDocParam', 'concrete','', '')
 
