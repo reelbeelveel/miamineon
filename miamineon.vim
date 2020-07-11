@@ -426,8 +426,34 @@ call s:HL('javaDocParam', 'concrete','', '')
 
 " }}}
 " JS {{{
-call s:HL('')
+call s:HL('jsDot', 'concrete','','')
+call s:HL('jsVariableDef','','','')
+call s:HL('jsOperatorKeyword','','','')
+call s:HL('jsModuleAsterisk','','','')
+call s:HL('jsTemplateString','mangotango','',''')
+call s:HL('jsBracket','','','')
+call s:HL('jsParens','','','')
+call s:HL('jsParen','','','')
 
+call s:HL('jsFuncCall', '','','')
+call s:HL('jsFunctionKey','','','')
+call s:HL('jsFunctionArgs','','','')
+call s:HL('jsFuncBlock','','','')
+call s:HL('jsFuncArgOperator','','','')
+
+
+call s:HL('jsObject', '','')
+call s:HL('jsObjectProp', '','')
+call s:HL('jsObjectValue','','','')
+call s:HL('jsObjectColon','','','')
+call s:HL('jsObjectKey','','','')
+call s:HL('jsObjectKeyComputed','','','')
+
+call s:HL('jsClassBlock','','','')
+call s:HL('jsClassValue','','','')
+
+call s:HL('jsBlock','','','')
+call s:HL('jsTryCatchBlock','','','')
 " }}}
 " LaTeX {{{
 
@@ -560,6 +586,6 @@ call s:HL('VimNotation', 'concrete', '', 'none')
 call s:HL('VimBracket', 'concrete', '', 'none')
 
 " }}}
-
+call s:HL('ALEError', 'red', 'ink', '')
 " }}}
 
