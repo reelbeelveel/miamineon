@@ -38,6 +38,9 @@ let s:mnc.darkgray     = ['242321', 235]
 let s:mnc.blackgray    = ['1c1b1a', 233]
 let s:mnc.blackestgray = ['141413', 232]
 
+let s:mnc.red        = ['ff0000', 196]
+let s:mnc.skyblue    = ['87afff', 111]
+let s:mnc.ddgblue    = ['005fff',  27]
 " With a high of 114ºF
 let s:mnc.hotpink    = ['d7005f', 162]
 " So yellow it's criminal.
@@ -427,32 +430,33 @@ call s:HL('javaDocParam', 'concrete','', '')
 " }}}
 " JS {{{
 call s:HL('jsDot', 'concrete','','')
-call s:HL('jsVariableDef','','','')
-call s:HL('jsOperatorKeyword','','','')
-call s:HL('jsModuleAsterisk','','','')
-call s:HL('jsTemplateString','mangotango','',''')
-call s:HL('jsBracket','','','')
-call s:HL('jsParens','','','')
-call s:HL('jsParen','','','')
+call s:HL('jsVariableDef','sunburn','','')
+call s:HL('jsOperatorKeyword','viceyellow','','')
+call s:HL('jsModuleAsterisk','viceyellow','','')
+call s:HL('jsTemplateString','mangotango','','')
+call s:HL('jsBracket','concrete','','')
+call s:HL('jsParens','seastain','','')
+call s:HL('jsParen','seastain','','')
 
-call s:HL('jsFuncCall', '','','')
-call s:HL('jsFunctionKey','','','')
-call s:HL('jsFunctionArgs','','','')
-call s:HL('jsFuncBlock','','','')
-call s:HL('jsFuncArgOperator','','','')
-
-
-call s:HL('jsObject', '','')
-call s:HL('jsObjectProp', '','')
-call s:HL('jsObjectValue','','','')
-call s:HL('jsObjectColon','','','')
-call s:HL('jsObjectKey','','','')
-call s:HL('jsObjectKeyComputed','','','')
-
+call s:HL('jsFuncCall', 'skyblue','','')
+call s:HL('jsFunctionKey','viceyellow','','')
+call s:HL('jsFunctionArgs','sunburn','','')
+call s:HL('jsFuncArgs','sunburn','','')
+call s:HL('jsFuncBlock','mangotango','','')
+call s:HL('jsFuncArgOperator','mangotango','','')
+"
+"
+call s:HL('jsObject', 'mangotango','','')
+call s:HL('jsObjectProp', 'ddgblue','')
+call s:HL('jsObjectValue','skyblue','','')
+call s:HL('jsObjectColon','ddgblue','','')
+call s:HL('jsObjectKey','seastain','','')
+call s:HL('jsObjectKeyComputed','skyblue','','')
+"
 call s:HL('jsClassBlock','','','')
 call s:HL('jsClassValue','','','')
-
-call s:HL('jsBlock','','','')
+"
+call s:HL('jsBlock','slime','','')
 call s:HL('jsTryCatchBlock','','','')
 " }}}
 " LaTeX {{{
