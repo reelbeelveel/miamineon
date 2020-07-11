@@ -452,12 +452,7 @@ call s:HL('jsObjectValue','skyblue','','')
 call s:HL('jsObjectColon','ddgblue','','')
 call s:HL('jsObjectKey','seastain','','')
 call s:HL('jsObjectKeyComputed','skyblue','','')
-"
-call s:HL('jsClassBlock','','','')
-call s:HL('jsClassValue','','','')
-"
-call s:HL('jsBlock','slime','','')
-call s:HL('jsTryCatchBlock','','','')
+
 " }}}
 " LaTeX {{{
 
