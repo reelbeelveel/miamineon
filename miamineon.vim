@@ -50,6 +50,8 @@ let s:mnc.crocodile  = ['5f875f', 65]
 let s:mnc.slime      = ['87ff00', 118]
 " Heavily burnt, rotting orange.
 let s:mnc.sunburn    = ['d75f00', 166]
+
+let s:mnc.mangotango = ['ff8c42', 209]
 " Dirty underpass
 let s:mnc.concrete   = ['d7d7ff', 189]
 " Gradient fullfilled.
@@ -412,8 +414,7 @@ call s:HL('htmlSpecialChar',      'slime', '', 'none')
 call s:HL('htmlArg', 'viceyellow', '', 'none')
 
 " Stuff inside an <a> tag
-
-    call s:HL('htmlLink', 'concrete', '', 'underline')
+call s:HL('htmlLink', 'concrete', '', 'underline')
 " }}}
 " Java {{{
 
@@ -422,6 +423,10 @@ call s:HL('javaScopeDecl', 'viceyellow', '', 'bold')
 call s:HL('javaCommentTitle',    'lightgray', '')
 call s:HL('javaDocTags', 'milk', '', 'none')
 call s:HL('javaDocParam', 'concrete','', '')
+
+" }}}
+" JS {{{
+call s:HL('')
 
 " }}}
 " LaTeX {{{
