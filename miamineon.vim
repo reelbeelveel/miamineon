@@ -378,7 +378,7 @@ call s:HL('cssGeneratedContentProp', 'viceyellow', '', 'none')
 call s:HL('cssValueLength', 'purple', '', 'bold')
 call s:HL('cssColor', 'purple', '', 'bold')
 call s:HL('cssBraces', 'lightgray', '', 'none')
-call s:HL('cssIdentifier', 'sunburn', '', 'bold')
+call s:HL('cssIdentifier', 'mangotango', '', 'bold')
 call s:HL('cssClassName', 'sunburn', '', 'none')
 
 " }}}
@@ -411,7 +411,7 @@ call s:HL('htmlEndTag', 'purplest', 'bg', 'none')
 " Tag names
 call s:HL('htmlTagName',       'purple', '', 'bold')
 call s:HL('htmlSpecialTagName','sunburn', '', 'bold')
-call s:HL('htmlSpecialChar',      'slime', '', 'none')
+call s:HL('htmlSpecialChar',     'slime', '', 'none')
 
 " Attributes
 call s:HL('htmlArg', 'viceyellow', '', 'none')
